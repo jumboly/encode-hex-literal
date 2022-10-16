@@ -1,0 +1,53 @@
+{
+  "name": "encode-hex-literal",
+  "displayName": "Encode hex literal",
+  "description": "選択された文字列リテラルを16進表記に変換します",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "text"
+  ],
+  "activationEvents": [
+    "onCommand:encode-sjis-hex",
+    "onCommand:encode-utf8-hex"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "encode-sjis-hex",
+        "title": "Encode sjis hex"
+      },
+      {
+        "command": "encode-utf8-hex",
+        "title": "Encode utf8 hex"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.72.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.24.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3"
+  }
+}
