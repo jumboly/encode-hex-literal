@@ -2,12 +2,16 @@
   "name": "encode-hex-literal",
   "displayName": "Encode hex literal",
   "description": "選択された文字列リテラルを16進表記に変換します",
+  "repository": {
+    "url": "https://github.com/jumboly/encode-hex-literal",
+    "type": "git"
+  },
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.72.0"
   },
   "categories": [
-    "text"
+    "Formatters"
   ],
   "activationEvents": [
     "onCommand:encode-sjis-hex",
