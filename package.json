@@ -2,6 +2,7 @@
   "name": "encode-hex-literal",
   "displayName": "Encode hex literal",
   "description": "選択された文字列リテラルを16進表記に変換します",
+  "publisher": "jumboly",
   "repository": {
     "url": "https://github.com/jumboly/encode-hex-literal",
     "type": "git"
